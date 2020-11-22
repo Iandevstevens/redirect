@@ -1,7 +1,11 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  useEffect(()=>{
+    window.open("https://www.w3schools.com");
+  }, [])
   return (
     <div className={styles.container}>
       <Head>
